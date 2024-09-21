@@ -154,15 +154,16 @@ section {
     min-height: 350px;
     flex-direction: column;
     flex: 1 1 16rem;
-    background: red;
+    background: rgba(54, 53, 53, 0.671);
 }
 
 .coffee-info {
-    height: 90px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .coffee-info h4 {
@@ -175,9 +176,9 @@ section {
 }
 
 .coffee-img img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn-links {
@@ -195,6 +196,101 @@ section {
 
 /* Coffee Section Ends */
 
+/* Check Out Section Starts */
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(207, 105, 32, 0.5);
+
+}
+
+.check img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.check-text h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.check-text a {
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 20px;
+    color: #ffffffb8;
+    background: #f2830c;
+}
+
+/* Check Out Section Ends */
+
+/*Review Section Starts  */
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.review-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    background: rgba(232, 229, 229, 0.866);
+    padding: 10px;
+}
+
+
+.customer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+
+.customer img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.customer-comment,
+.stars {
+    font-size: 0.7rem;
+}
+
+.customer-comment {
+    margin-right: 80px;
+}
+
+.stars {
+    color: #f2830c;
+}
+
+/* Review Section Ends */
 
 @media(max-width:700px) {
     .menu-icon {
@@ -255,6 +351,46 @@ section {
     .menu {
         text-align: center;
     }
+
+    .check {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .check img {
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        margin: auto;
+        
+    }
+
+    .check-text {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .check-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .check-text a {
+        padding: 5px;
+    }
+
+    .review-container .swiper-slide{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .customer{
+        flex-wrap: wrap;
+    }
+
 
 
 

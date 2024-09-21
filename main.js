@@ -10,3 +10,12 @@ menuIcon.addEventListener("click", () => {
         menuIcon.src = "./img/menu.svg"
     }
 })
+
+var swiper = new Swiper(".review-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
